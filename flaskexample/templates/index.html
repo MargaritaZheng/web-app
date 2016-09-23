@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>{{title}} - microblog</title>
+    </head>
+    <body>
+        <h1>Welcome, {{user.nickname}}</h1>
+    </body>
+
+<script src="/static/js/dropzone.js"></script>
+<link rel="stylesheet" href="/static/css/dropzone.css">
+
+<p>
+  Upload file here.
+</p>
+
+<!-- Change /upload-target to your upload address -->
+<!-- <form action="/upload-target" class="dropzone"></form> -->
+<form action="/upload-target" method=post enctype=multipart/form-data>
+  <input type="file" name="file">
+     <input type="submit" value="Upload">
+</form>
+<p>
+ Shoe Name:{{shoename}}
+</p>
+<p>
+ Shoe Sku:{{shoesku}}
+</p>
+<p>
+ Number currently on sale: {{numcursold}}
+</p>
+
+</html>
